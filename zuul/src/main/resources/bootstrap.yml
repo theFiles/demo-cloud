@@ -1,0 +1,9 @@
+server:
+  port: 8086
+
+spring:
+  cloud:
+    config:
+      name: zuul,consumer
+      profile: dev
+      uri: http://localhost:7070

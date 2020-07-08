@@ -1,0 +1,9 @@
+server:
+  port: 8099
+
+spring:
+  cloud:
+    config:
+      name: eureka
+      profile: dev
+      uri: http://localhost:7070

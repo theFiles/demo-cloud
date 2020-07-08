@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: p1
+  cloud:
+    config:
+      name: provider
+      profile: dev
+      uri: http://localhost:7070
+server:
+  port: 9001
