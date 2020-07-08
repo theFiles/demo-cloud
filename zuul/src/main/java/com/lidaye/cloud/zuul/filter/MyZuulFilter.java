@@ -52,14 +52,14 @@ public class MyZuulFilter extends ZuulFilter {
         // 获取头部 token 信息
         String access_token = request.getHeader("access_token");
 
-        if(access_token == null || "".equals(access_token)){
+        /*if(access_token == null || "".equals(access_token)){
             // 是否要转发请求
             requestContext.setSendZuulResponse(false);
             // 状态码
             requestContext.setResponseStatusCode(403);
             // 返回内容
             requestContext.setResponseBody("token is invalid");
-        }
+        }*/
 
         return null;
     }
