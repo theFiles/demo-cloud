@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: c1
+  cloud:
+    config:
+      name: consumer
+      profile: dev
+      uri: http://localhost:7070
+server:
+  port: 8001
+
