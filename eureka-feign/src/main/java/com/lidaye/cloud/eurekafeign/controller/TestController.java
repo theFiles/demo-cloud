@@ -15,4 +15,9 @@ public class TestController {
     public Object runP1() {
         return p1Api.run();
     }
+
+    @GetMapping("/hystrixP1")
+    public Object hystrixP1() {
+        return p1Api.hystrix();
+    }
 }

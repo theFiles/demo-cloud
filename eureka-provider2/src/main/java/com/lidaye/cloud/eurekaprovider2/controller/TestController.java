@@ -9,4 +9,9 @@ public class TestController {
     public Object run() {
         return "李大爷";
     }
+
+    @GetMapping("/hystrix")
+    public String hystrix() {
+        throw new RuntimeException("发生异常！");
+    }
 }

@@ -9,4 +9,9 @@ public class TestController {
     public Object run() {
         return "lidaye";
     }
+
+    @GetMapping("/hystrix")
+    public String hystrix() {
+        return "成功调用服务p1";
+    }
 }
